@@ -52,3 +52,11 @@ Python 2 and Python 3 is different. Some examples are
 
 
 ```
+
+### Taking input from user
+
+```python
+
+    user = input()
+
+```

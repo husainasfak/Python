@@ -14,3 +14,6 @@ print(result)
 
 sum = (lambda x, y: x+y)(2, 3)
 print(sum)
+
+
+# Lambda funtions are those functions that execute at run time

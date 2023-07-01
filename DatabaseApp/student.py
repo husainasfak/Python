@@ -62,12 +62,7 @@ canvas.pack()
 frame = Frame()
 frame.place(relx=0.1, rely=0.1, relheight=0.8, relwidth=0.8)
 
-text_widget = tk.Text(root)
-text_widget.pack()
-text_widget.delete('1.0', 'end')  # Clear existing text
-new_text = "Hello, world!"
-text_widget.insert('1.0', new_text)
-
+root.title("Student Database")
 
 label = Label(frame, text="Add Data")
 label.grid(row=0, column=1)

@@ -1,0 +1,15 @@
+{% extends 'helloworld/baseTemp.html'%} {%block code%}
+<h1>Books</h1>
+
+<ul>
+  {%for book in book_list%} {% comment %}
+  <a href="/{{book.id}}"
+    ><li>{{book.name}} - {{book.desc}} --- ${{book.price}}</li></a
+  >
+  {% endcomment %}
+  <a href="{% url 'helloworld:bookDetail' book.id%}"
+    ><li>{{book.name}} - {{book.desc}} --- ${{book.price}}</li></a
+  >
+  {%endfor%}
+</ul>
+{% endblock %}

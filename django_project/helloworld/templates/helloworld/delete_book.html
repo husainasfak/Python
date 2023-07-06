@@ -1,0 +1,9 @@
+<form method="POST">
+  {% comment %} Need to add token which is cross site request forgery
+  {%endcomment %} {% csrf_token %}
+
+  <h1>Are you sure that you want to delete this book from database</h1>
+
+  <button type="submit">Confirm</button>
+  <a href="{% url 'helloworld:index'%}">Cancel</a>
+</form>

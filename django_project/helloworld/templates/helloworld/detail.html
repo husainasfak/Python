@@ -1,0 +1,16 @@
+{% extends 'helloworld/baseTemp.html'%} {%block code%}
+<html>
+     <head>
+          <title>Book Store | {{book.name}}</title>
+     </head>
+     <body>
+         
+          <h5>{{book.name}}<h5>
+          <p>About : {{book.desc}}</p>
+          <p>Price : {{book.price}}</p> 
+          <img src="{{book.img.url}}"/>
+          <a href="{% url 'helloworld:update' book.id%}">Update</a>
+          <a href="{% url 'helloworld:delete' book.id%}">Delete</a>
+     <body>
+</html>
+{% endblock %}
